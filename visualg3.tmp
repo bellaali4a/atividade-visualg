@@ -1,0 +1,23 @@
+algoritmo "contar_ocorrencias"
+var
+    numeros: vetor[1..15] de inteiro
+    valor, contador, i: inteiro
+inicio
+    contador := 0
+
+    para i de 1 ate 15 passo 1 faca
+        escreva("Digite o ", i, "º número: ")
+        leia(numeros[i])
+    fimpara
+
+    escreva("Digite o valor a ser contado: ")
+    leia(valor)
+
+    para i de 1 ate 15 passo 1 faca
+        se numeros[i] = valor entao
+            contador := contador + 1
+        fimse
+    fimpara
+
+    escreva("O valor ", valor, " ocorre ", contador, " vezes no vetor.")
+fimalgoritmo
